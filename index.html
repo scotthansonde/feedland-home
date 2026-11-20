@@ -1,0 +1,539 @@
+<html>
+	<head>
+		<title>[%productNameForDisplay%]</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Facebook metadata -->
+			<meta property="og:url" content="[%metaUrl%]" />
+			<meta property="og:type" content="website" />
+			<meta property="og:title" content="[%metaTitle%]" />
+			<meta property="og:description" content="[%metaDescription%]" />
+			[%facebookImage%]
+			<meta property="og:site_name" content="[%metaSiteName%]" />
+		<!-- Twitter metadata -->
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:site" content="[%metaTwitterOwnerName%]">
+			<meta name="twitter:title" content="[%metaTitle%]">
+			<meta name="twitter:url" content="[%metaUrl%]">
+			<meta name="twitter:description" content="[%metaDescription%]">
+			[%twitterImage%]
+
+		<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+		<script src="//s3.amazonaws.com/scripting.com/code/includes/jquery-1.9.1.min.js"></script>
+<link href="//s3.amazonaws.com/scripting.com/code/includes/bootstrap.css" rel="stylesheet">
+<script src="//s3.amazonaws.com/scripting.com/code/includes/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/fontawesome/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Ubuntu:400,400i,500i,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+
+<script src="//s3.amazonaws.com/scripting.com/code/includes/basic/code.js?x=2"></script>
+<link href="//s3.amazonaws.com/scripting.com/code/includes/basic/styles.css" rel="stylesheet" type="text/css">
+
+
+		<script src="//s3.amazonaws.com/scripting.com/code/nodestorage/api.js"></script>
+		<script src="//s3.amazonaws.com/fargo.io/code/shared/emojify.js"></script>
+		<link rel="stylesheet" href="//s3.amazonaws.com/fargo.io/code/shared/emojify.css"/>
+		<script src="//s3.amazonaws.com/fargo.io/code/markdownConverter.js"></script>
+		<script src="//s3.amazonaws.com/fargo.io/cms/dateFormat.js"></script>
+		<script src="//s3.amazonaws.com/scripting.com/code/concord/testing/3.0.6/concord.js"></script>
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/concord/testing/3.0.6/concordstyles.css"/>
+		<script src="//s3.amazonaws.com/fargo.io/code/shared/outliner.js"></script>
+		<script src="//s3.amazonaws.com/scripting.com/code/opmlpackage/client/opml.js"></script>
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/outlinedialog/styles.css">
+		<script src="//s3.amazonaws.com/scripting.com/code/outlinedialog/code.js"></script>
+		<script src="//s3.amazonaws.com/fargo.io/code/keypress.js" /></script>
+
+		<script src="//cdn.jsdelivr.net/medium-editor/latest/js/medium-editor.min.js"></script>
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/medium-editor/latest/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+
+		<link rel="stylesheet" href="//s3.amazonaws.com/fargo.io/code/editors/mediumeditor/dist/css/themes/default.css">
+		<script src="//s3.amazonaws.com/fargo.io/code/editors/mediumEditorMarkdown/me-markdown.standalone.js"></script>
+
+		<script src="//s3.amazonaws.com/scripting.com/code/outlinebrowser/code.js"></script>
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/outlinebrowser/styles.css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/river6/browsers/riverbrowser.js"></script>
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/river6/browsers/styles.css"/>
+
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/river6/templates/feedviewer/styles.css"/>
+		<script src="//s3.amazonaws.com/scripting.com/code/river6/templates/feedviewer/code.js"></script>
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/mailboxviewer.js"></script>
+
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/editbox.js"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/editbox.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/oldschoolrender.js"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/oldschoolrender.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/newsbox.js"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/newsbox.css" rel="stylesheet" type="text/css">
+
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/riverviewer.js?x=1"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/riverviewer.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/subscriptionlog.js"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/subscriptionlog.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/misc.js?x=1"></script>
+		<script>
+          function isMobileDevice () { return false; }
+		</script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/misc.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/getfeedinfo.js?x=0"></script>
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/feeds.js"></script>
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/viewfeedpage.js"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/viewfeedpage.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/viewfeedlist.js?x=0"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/viewfeedlist.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/api.js"></script>
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/opmlsubscribe.js"></script>
+
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/userslist.js"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/userslist.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/readinglists.js"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/readinglists.css" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/viewuserpage.js"></script>
+
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/dialogs/dialogs.css"/>
+		<script src="//s3.amazonaws.com/scripting.com/code/dialogs/dialogs.js" /></script>
+
+		<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/feedland/home/signupdialog.css"/>
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/signupdialog.js" /></script>
+
+		<script src="//s3.amazonaws.com/scripting.com/code/bookmarksmenu/bookmarks.js"></script>
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/sockets.js"></script>
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/code.js?x=0"></script>
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/styles.css?x=0" rel="stylesheet" type="text/css">
+
+		<link href="//s3.amazonaws.com/scripting.com/code/feedland/home/mobile.css?x=0" rel="stylesheet" type="text/css">
+
+		<script src="//s3.amazonaws.com/scripting.com/code/feedland/home/testing.js?x=0"></script>
+
+		<script>
+			var appConsts = {
+				productname: "[%productName%]",
+				productnameForDisplay: "[%productNameForDisplay%]",
+				leadingQuestion: "Write a post for your personal feed...",
+				defaultEditorButtons: ["bold", "italic", "underline", "anchor", "orderedlist", "unorderedlist", "quote"],
+				editorPlaceholderText: "You can write a short post here.",
+				version: "[%feedlandVersion%]",
+				urlTwitterServer: "[%urlServerForClient%]",
+				urlSocketServer: "[%urlWebsocketServerForClient%]",
+				flEnableLogin: [%flEnableLogin%],
+				flEnableNewUsers: [%flEnableNewUsers%],
+				flUseTwitterIdentity: [%flUseTwitterIdentity%], //1/10/23 by DW
+				urlNewsProducts: "[%urlNewsProducts%]", //1/16/23 by DW
+
+				flUserFeeds: [%flUserFeeds%], //1/20/23 by DW
+				flNewsProducts: [%flNewsProducts%], //1/20/23 by DW
+				flLikesFeeds: [%flLikesFeeds%], //1/20/23 by DW
+				serverConfig: [%configJson%], //1/21/23 by DW
+
+				flUseSockets: [%flWebsocketEnabled%], //9/10/23 by DW
+				urlForFeeds: "[%urlForFeeds%]",
+				fnamePrefs: "appPrefs.json",
+				feedlandVersion: "[%feedlandVersion%]", //9/21/23 by DW
+				flWordPressIdentityDefault: "[%flWordPressIdentityDefault%]", //11/13/23 by DW
+				mysqlVersion: "[%mysqlVersion%]", //11/18/23 by DW
+				feedlandDatabaseVersion: "[%feedlandDatabaseVersion%]", //12/1/23 by DW
+
+				membershipClosedHeadline: "[%membershipClosedHeadline%]", //5/27/24 by DW
+				membershipClosedExplanation: "[%membershipClosedExplanation%]"
+				}
+			</script>
+			<link rel="stylesheet" href="https://scotthansonde.github.io/feedland-home/custom-a.css?v=3">
+		</head>
+	<body>
+		<div class="divMenubar" id="idMenubar">
+			<div class="topbar-wrapper" style="z-index: 5;">
+				<div class="navbar navbar-fixed-top" data-dropdown="dropdown">
+					<div class="divVersionNumber">
+						</div>
+					<div class="navbar-inner">
+						<div class="container">
+							<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								</button>
+							<a class="brand" href="/" id="idLinkToHome"><span id="idMenuProductName">[%productNameForDisplay%]*</span></a>
+							<div class="nav-collapse collapse">
+								<ul class="nav" id="idMainMenuList">
+
+
+									<li class="dropdown" id="idMainMenu">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu&nbsp;<b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li id="idViewMyNews"><a onclick="viewMyNews ()">My news...</a></li>
+											<li id="idViewMyFeedlist"><a onclick="viewMySubscriptions ()">My feed list...</a></li>
+											<li id="idNewsproductMenuItem"><a onclick="viewMyNewsproduct ()">My news product...</a></li>
+											<li class="divider"></li>
+											<li class="dropdown-submenu" id="idOutgoingFeedsSubmenu">
+												<a href="#" tabindex="-1">My feed...</a>
+													<ul class="dropdown-menu ulViewbyMenu">
+														<li id="idEditMyFeedItem"><a onclick="editMyFeed ()">Just my feed...</a></li>
+														<li id="idReadUserFeeds"><a onclick="userFeedsNews ()">All user's feeds...</a></li>
+														</ul>
+												</li>
+											<li class="divider"></li>
+											<li class="dropdown-submenu" id="idSubscribeSubmenu">
+												<a href="#" tabindex="-1">Subscribe...</a>
+													<ul class="dropdown-menu ulViewbyMenu">
+														<li id="idSubOneFeed"><a onclick="subscribeToOneFeedCommand ()">To one feed...</a></li>
+														<li id="idSubOpmlFile"><a onclick="importOpmlCommand ()">From an OPML file...</a></li>
+														<li id="idSubOpmlUrl"><a onclick="opmlSubscribeFromUrl ()">From an OPML file URL...</a></li>
+													</ul>
+												</li>
+											<li class="divider"></li>
+											<li id="idSearchMenuItem"><a onclick="feedSearchCommand ()">Search feed titles...</a></li>
+											<li class="divider"></li>
+											<li class="dropdown-submenu" id="idSpecialPagesSubmenu">
+												<a href="#" tabindex="-1">Special pages...</a>
+													<ul class="dropdown-menu ulViewbyMenu">
+														<li><a href="/?userslist">Recent users...</a></li>
+														<li><a href="/?log">Subscription log...</a></li>
+														<li><a href="/?hotlist">Hotlist...</a></li>
+														<li><a onclick="everyonesNews ()">Everyone's news...</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									<li class="dropdown" id="idMobileMainMenu">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-ellipsis-v"></i></a>
+										<ul class="dropdown-menu">
+											<li id="idViewMyNewsMobile"><a onclick="viewMyNews ()">My news...</a></li>
+											<li id="idViewMyFeedlistMobile"><a onclick="viewMySubscriptions ()">My feed list...</a></li>
+											<li class="divider"></li>
+											<li id="idEditMyFeedItemMobile"><a onclick="editMyFeed ()">My feed...</a></li>
+											<li class="divider"></li>
+											<li id="idSubOneFeedMobile"><a onclick="subscribeToOneFeedCommand ()">Subscribe...</a></li>
+											<li class="divider"></li>
+											<li><a href="/?userslist">Recent users...</a></li>
+											<li id="idSearchMenuItem"><a onclick="feedSearchCommand ()">Search feed titles...</a></li>
+											</ul>
+										</li>
+
+
+									<li class="dropdown" id="idToolsMenu">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools&nbsp;<b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a onclick="setStartPageCommandCommand ()">Set start page...</a></li>
+
+											<li class="divider"></li>
+											<li class="dropdown-submenu" id="idReadingListsSubmenu">
+												<a href="#" tabindex="-1">Reading lists...</a>
+													<ul class="dropdown-menu ulViewbyMenu">
+														<li id="idMyReadingListSubs"><a onclick="viewMyReadingListSubs ()">My reading lists...</a></li>
+														<li id="idOtherUsersReadingListSubs"><a onclick="viewOtherUsersReadingListSubs ()">Other user's lists...</a></li>
+														<li id="idFeedCorpsReadingListSubs"><a href="?feedcorps=true">FeedCorps lists...</a></li>
+														<li class="divider"></li>
+														<li id="idSubscribeToReadingList"><a onclick="subscribeToReadingListCommand ()">Subscribe to reading list..</a></li>
+													</ul>
+												</li>
+											<li class="dropdown-submenu" id="idBookmarkletsSubmenu">
+												<a href="#" tabindex="-1">Bookmarklets...</a>
+													<ul class="dropdown-menu ulViewbyMenu">
+														<li><a href="https://bookmarkletmaker.scripting.com/?app=[%urlServerForClient%]&name=[%productNameForDisplay%]" target=\"_blank\">Linkblog bookmarklet...</a></li>
+														<li><a href="http://bookmarkletmaker.scripting.com/?app=[%urlServerForClient%]&name=[%productNameForDisplay%] Subscribe&command=subscribe" target=\"_blank\">Subscription bookmarklet...</a></li>
+													</ul>
+												</li>
+											<li class="divider"></li>
+
+											<li><a onclick="connectWithWordpress ()">Sign on with WordPress...</a></li>
+											<li class="divider"></li>
+
+
+											<li id="idCategoricalUnsubscribe"><a onclick="categoricalUnsubscribe ()">Categorical unsub...</a></li>
+											<li class="divider"></li>
+
+											<li id="idAddAFewFeedsMenu"><a onclick="addAFewFeeds ()">Add a few feeds...</a></li>
+											<li><a onclick="checkFeedNowCommand ()">Check feed now...</a></li>
+											</ul>
+										</li>
+									<li class="dropdown" id="idCatsMenu">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cats&nbsp;<b class="caret"></b></a>
+										<ul class="dropdown-menu catsMenuList">
+											</ul>
+										</li>
+									<li class="dropdown" id="idDocsMenu">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs&nbsp;<b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="https://docs.feedland.com/gettingstarted.md" target="_blank"><span id="idStartingUpMenu">Starting up</span></a></li>
+											<li><a href="https://docs.feedland.com/yourfeedlist.md" target="_blank"><span id="idGoingDeeperMenu">Your feed list</span></a></li>
+											<li><a href="https://docs.feedland.com/readingnews.md" target="_blank"><span id="idGoingDeeperMenu">Reading news</span></a></li>
+											<li><a href="https://docs.feedland.com/categories.md" target="_blank"><span id="idCategoriesMenu">Categories</span></a></li>
+											<li><a href="https://docs.feedland.com/newsproducts.md" target="_blank"><span id="idNewsProductsMenu">News Products</span></a></li>
+											<li class="divider"></li>
+											<li><a href="http://data.feedland.org/changenotes/" target="_blank"><span id="idChangeNotesMenu">Change Notes</span></a></li>
+											<li class="divider"></li>
+											<li><a href="https://github.com/scripting/feedlandSupport/issues/180" target="_blank">Support (GitHub)</a></li>
+											</ul>
+										</li>
+									<li class="dropdown" id="idBookmarksMenu" style="display: none">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="far fa-bookmark"></i><span class="notDisplayedOnMobile">&nbsp;<b class="caret"></b></span></a>
+										<ul class="dropdown-menu" id="idBookmarksList">
+											</ul>
+										</li>
+
+									<li class="dropdown" id="idViewMenu" style="display: none">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">View&nbsp;<b class="caret"></b></a>
+										<ul class="dropdown-menu" id="idFeedsMenuList">
+											<li id="idViewAsRiver"><a onclick="viewAsRiverCommand ()">View as river...</a></li>
+											<li id="idViewAsMailbox"><a onclick="viewAsMailboxCommand ()">View as mailbox...</a></li>
+											<li class="divider"></li>
+											<li id="idViewFeedinfo"><a onclick="getFeedInfoCommand ()">Get feed info...</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							<div class="nav-collapse collapse">
+								<ul class="nav pull-right">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="idTwitterIcon"></span><span id="idTwitterUsername"></span><span class="notDisplayedOnMobile">&nbsp;<b class="caret"></b></span></a>
+										<ul class="dropdown-menu">
+											<li><a onclick="myAboutDialog ();">About [%productNameForDisplay%]...</a></li>
+											<li class="divider"></li>
+											<li id="idSettingsCommand"><a onclick="settingsCommand ();">Settings...</a></li>
+
+											<li class="divider" id="idSupervisorDivider" style="display: none"></li>
+											<li id="idStartSupervisorMenu" style="display: none"><a onclick="toggleSupervisorMode ()"><span id="idSupervisorMenutext">Supervisor mode</span>...</a></li>
+
+											<li class="divider"></li>
+											<li><a onclick="twToggleConnectCommand ();" id="idTwitterConnectMenuItem"></a></li>
+
+											<li><a onclick="signOffCommand ();" id="idSignoffMenuItem" style="display: none;">Sign off [%productNameForDisplay%]</a></li>
+											<li><a onclick="signOnCommand ();" id="idSignonMenuItem" style="display: none;">Sign on with <span class="spNameIdentityService"></span></a></li>
+											<li><a onclick="signUpCommand ();" id="idSignupMenuItem" style="display: none;">Sign up with <span class="spNameIdentityService"></span></a></li>
+
+											<li><a onclick="connectWithWordpress () ();" id="idConnectWithWordPressMenuItem" style="display: none;">Connect with WordPress</a></li>
+
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="divPrefsDialog" comment="This is the Settings dialog.">
+			<div id="idPrefsDialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="windowTitleLabel" aria-hidden="true">
+				<div class="modal-body">
+					<div class="divDialogElements">
+						<form method="POST">
+	<div class="divTabsFromOutline">
+	<div class="tabbable">
+		<ul class="nav nav-tabs" data-tabs="tabs">
+			<li class="active" ><a href="#idCategories326"  data-toggle="tab">Categories</a></li>
+			<li><a href="#idNewsProduct326"  data-toggle="tab">News Product</a></li>
+			<li><a href="#idLinker326"  data-toggle="tab">Linker</a></li>
+			<li><a href="#idFeed326"  data-toggle="tab">Feed</a></li>
+			<li><a href="#idMisc326"  data-toggle="tab">Misc</a></li>
+			</ul>
+		<div id="my-tab-content" class="tab-content">
+			<div class="active tab-pane" id="idCategories326">
+				<fieldset>
+					<div class="divPrefs">
+	<div class="clearfix">
+	<label for="usersCategoryList">Categories:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="usersCategoryList" name="usersCategoryList" size="50" type="text" value="" placeholder="Enter something like All, Business, Podcasts, Sports" />
+		</div>
+	</div>
+<div class="clearfix">
+	<label for="homePageCategoryList">Home&nbsp;page:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="homePageCategoryList" name="homePageCategoryList" size="50" type="text" value="" placeholder="Optional list of comma-separated categories for home page news" />
+		</div>
+	</div>
+<div class="clearfix">
+	<label for="newsproductCategoryList">News&nbsp;product:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="newsproductCategoryList" name="newsproductCategoryList" size="50" type="text" value="" placeholder="The categories that appear on your News Product page." />
+		</div>
+	</div>
+
+	</div>
+
+					</fieldset>
+						</div>
+					<div class="tab-pane" id="idNewsProduct326">
+						<fieldset>
+							<div class="divPrefs">
+	<div class="clearfix">
+	<label for="newsproductTitle">Title:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="newsproductTitle" name="newsproductTitle" size="50" type="text" value="" placeholder="The title of the News Product that appears at the top of the page." />
+		</div>
+	</div>
+<div class="clearfix">
+	<label for="newsproductDescription">Description:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="newsproductDescription" name="newsproductDescription" size="50" type="text" value="" placeholder="A short description that goes below the title." />
+		</div>
+	</div>
+<div class="clearfix">
+	<label for="newsproductImage">Image URL:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="newsproductImage" name="newsproductImage" size="50" type="text" value="" placeholder="The URL of an image to appear at the top of the page." />
+		</div>
+	</div>
+<div class="clearfix">
+	<label for="newsproductStyle">CSS:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="newsproductStyle" name="newsproductStyle" size="50" type="text" value="" placeholder="This CSS appears after all other styles." />
+		</div>
+	</div>
+<div class="clearfix">
+	<label for="newsproductScript">Script:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="newsproductScript" name="newsproductScript" size="50" type="text" value="" placeholder="JavaScript code that runs when the News Product starts up." />
+		</div>
+	</div>
+
+	</div>
+
+							</fieldset>
+								</div>
+							<div class="tab-pane" id="idLinker326">
+								<fieldset>
+									<div class="divPrefs">
+	<p>By default we use FeedLand itself, but you can enter the address of another linkblogging tool here, and when you forward a news item the link will open there.</p><div class="clearfix">
+	<label for="urlLinkblog">URL:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="urlLinkblog" name="urlLinkblog" size="50" type="text" value="" placeholder="Enter the URL of your linkblogging tool." />
+		</div>
+	</div>
+
+	</div>
+
+									</fieldset>
+										</div>
+									<div class="tab-pane" id="idFeed326">
+										<fieldset>
+											<div class="divPrefs">
+	<p>You can set the title and description for the feed that we maintain for you.</p><div class="clearfix">
+	<label for="myFeedTitle">Title:</label>
+	<div class="input">
+		<input class="xlarge prefsInput" id="myFeedTitle" name="myFeedTitle" size="50" type="text" value="" placeholder="The &lt;title> element for the feed." />
+		</div>
+	</div>
+<div class="clearfix">
+	<label for="myFeedDescription">Description:</label>
+	<div class="input">
+		<textarea class="xxlarge" id="myFeedDescription" name="myFeedDescription" cols="70" rows="3"placeholder="The &lt;description> element for the feed." ></textarea>
+		</div>
+	</div>
+
+	</div>
+
+											</fieldset>
+												</div>
+											<div class="tab-pane" id="idMisc326">
+												<fieldset>
+													<div class="divPrefs">
+	<div class="clearfix">
+	<label for="flNewsbox"></label>
+	<div class="input">
+		<input type="checkbox" name="flNewsbox" value=xxx>&nbsp;Show news items in a small box at the top of the screen.
+		</div>
+	</div>
+<div class="clearfix">
+	<label for="flLoadNewPostsButton"></label>
+	<div class="input">
+		<input type="checkbox" name="flLoadNewPostsButton" value=xxx>&nbsp;Enable 'Load New Posts' button.
+		</div>
+	</div>
+
+	</div>
+
+													</fieldset>
+														</div>
+													</div>
+												</div>
+											</div>
+
+	</form>
+
+						</div>
+					</div>
+				<div class="modal-footer">
+					<a href="#" class="btn" onclick="prefsCloseDialog ();">Cancel</a>
+					<a href="#" class="btn btn-primary" onclick="prefsOkClicked ();">OK</a>
+					</div>
+				</div>
+			</div>
+		<div class="divPageBody">
+			<div class="divSignedOn" id="idSignedOn" style="display: none;">
+				<div class="divRiverViewerPage">
+					<div class="divRiverContainer" id="idRiverContainer">
+						</div>
+					</div>
+				</div>
+			<div class="divSignedOff" id="idSignedOff" style="display: none;">
+				<div class="divSignonDialog">
+					<div class="divSignonDialogPrompt">
+						<span class="spSignonDialogPromptText">
+							<span class="spMembershipOpen">Welcome to FeedLand!</span>
+							<span class="spMembershipWordPress">Welcome to FeedLand!</span>
+							<span class="spMembershipClosed">We're not signing up new users yet.</span>
+							</span>
+						</div>
+					<div class="divSignonExplanation">
+						<span class="spSignonExplanationText">
+							<span class="spMembershipOpen">FeedLand is a place to share and discover feeds. <i>Sign up</i> to create a new account, or <i>Sign on</i> to access a previously created account.</span>
+							<span class="spMembershipWordPress">FeedLand is an ecosystem of feeds, news and people. You can <a onclick="signupDialog ()">sign up</a> or <a onclick="userConnectWithEmail ()">sign on</a> with email, or click the button below to sign up with WordPress.</span>
+							<span class="spMembershipClosed">We're building a new FeedLand capable of serving far more news and users.</span>
+							</span>
+						</div>
+					<div class="divSignonButtons">
+						<div class="divSignonButton">
+							<span class="spMembershipOpen spMembershipWordPress">
+								<div style="width: 137px">
+									<span class="spTwitterForIdentity">
+										<button id="idNotLoggedOnTwitterButton"  class="btn" type="button" onclick="signOnButtonClick ();">
+											<i class="fab fa-twitter" style="color: #4099FF; font-weight: bold;"></i>&nbsp;Sign on Twitter
+											</button>
+										</span>
+									</div>
+								<div>
+									<span class="spMembershipWordPress">
+										<img src="//s0.wp.com/i/wpcc-button.png" width="231" onclick="connectWithWordpress ()" alt="Click here to sign on with WordPress">
+										</span>
+									</div>
+								</span>
+							<span class="spMembershipOpen spNotMembershipWordPress">
+								<button  class="btn" onclick="signUpCommand ();">Sign up</button>
+								<button  class="btn btn-primary" onclick="signOnCommand ();">Sign on</button>
+
+
+
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<script>
+			$(document).ready (function () {
+
+				startup ();
+				});
+			</script>
+		</body>
+	</html>

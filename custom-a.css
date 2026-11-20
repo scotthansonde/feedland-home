@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+    .divRiverTabs .nav-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+    .divRiverTabs .nav-tabs > li {
+        float: none;
+        flex: 0 0 auto;
+    }
+}
